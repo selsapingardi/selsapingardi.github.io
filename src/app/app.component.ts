@@ -36,6 +36,13 @@ export class AppComponent {
   title = 'portfolio';
   darkTheme = signal(false);
 
+  navLinks = [
+    'about me',
+    'experiences',
+    'projects',
+    'education'
+  ]
+
   constructor() {
     effect(() => {
       document.body.classList.toggle('dark', this.darkTheme());

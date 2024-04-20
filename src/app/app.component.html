@@ -1,13 +1,38 @@
-<mat-checkbox [checked]="darkTheme()" (change)="darkTheme.set($event.checked)">
-  Dark theme
-</mat-checkbox>
+<div class="min-h-screen mx-auto px-8">
+  <div class="flex lg:justify-content-between gap-5">
+    <header
+      class="w-6 sticky top-0 max-h-screen flex flex-column justify-content-between"
+    >
+      <div class="flex flex-column gap-1 pt-7">
+        <h1 class="text-7xl my-0">Selsa Pingardi</h1>
+        <p class="text-2xl font-medium mt-0 mb-2">Frontend Developer</p>
+        <p class="font-medium my-0 max-w-30rem">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <nav>
+          <ul class="mt-5 pl-0 list-none">
+            @for(link of navLinks; track link) {
+            <li class="uppercase">{{ link }}</li>
+            }
+          </ul>
+        </nav>
+      </div>
+      <div class="pb-7">
+        <button mat-icon-button (click)="darkTheme.set(!darkTheme())">
+          <mat-icon>{{ darkTheme() ? "light_mode" : "dark_mode" }}</mat-icon>
+        </button>
+      </div>
+    </header>
+    <main class="w-6 py-7">
+      <app-about-me></app-about-me>
 
-<app-about-me></app-about-me>
+      <app-experiences></app-experiences>
 
-<app-experiences></app-experiences>
+      <app-projects></app-projects>
 
-<app-projects></app-projects>
-
-<app-education></app-education>
-
+      <app-education></app-education>
+    </main>
+  </div>
+</div>
 <router-outlet></router-outlet>
