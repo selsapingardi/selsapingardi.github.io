@@ -1,0 +1,13 @@
+<div>
+  <p class="font-medium underline">Links</p>
+  <div class="flex flex-column align-items-start gap-2">
+    @for (link of links; track $index) {
+    <button mat-stroked-button>
+      <mat-icon class="mr-2" [svgIcon]="link.svg ?? ''">{{
+        link.icon
+      }}</mat-icon>
+      {{ link.label }}
+    </button>
+    }
+  </div>
+</div>

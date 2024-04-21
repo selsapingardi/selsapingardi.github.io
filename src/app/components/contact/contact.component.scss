@@ -1,0 +1,11 @@
+mat-icon {
+  font-size: 18px;
+  height: 18px;
+  width: 18px;
+}
+p {
+  color: var(--md-sys-color-on-primary-container);
+  span {
+    color: var(--md-sys-color-secondary);
+  }
+}

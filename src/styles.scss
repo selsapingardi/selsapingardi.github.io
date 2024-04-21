@@ -3,27 +3,32 @@
 @use "@angular/material" as mat;
 @use "@angular/material-experimental" as matx;
 
+@import "assets/theme/palette";
+
 @font-face {
-    font-family: Plus Jakarta Sans;
-    src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
-    font-style: normal;
-    font-weight: 100 700;
+  font-family: Plus Jakarta Sans;
+  src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+  font-style: normal;
+  font-weight: 100 700;
 }
 
 @font-face {
-    font-family: Plus Jakarta Sans;
-    src: url(/assets/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf);
-    font-style: italic;
-    font-weight: 100 700;
+  font-family: Plus Jakarta Sans;
+  src: url(/assets/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf);
+  font-style: italic;
+  font-weight: 100 700;
 }
 
-html, body {
-  height: 100%;
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
   margin: 0;
   font-family: Plus Jakarta Sans, sans-serif;
-  app-root {
-    height: 100%;
-  }
 }
 
 @mixin color-variant-styles($theme, $color-variant) {
@@ -106,10 +111,10 @@ html, body {
   }
 
   .mat-accent {
-    @include color-variant-styles($theme, secondary);
+    @include color-variant-styles($theme, tertiary);
   }
   .mat-badge-accent {
-    @include mat.badge-color($theme, $color-variant: secondary);
+    @include mat.badge-color($theme, $color-variant: tertiary);
   }
 
   .mat-warn {
@@ -126,8 +131,8 @@ html, body {
 // Base theme configuration for our M3 theme.
 $m3-base-config: (
   color: (
-    primary: matx.$m3-red-palette,
-    tertiary: matx.$m3-yellow-palette,
+    primary: $my-primary-palette,
+    tertiary: $my-tertiary-palette,
   ),
   typography: (
     plain-family: Plus Jakarta Sans,
@@ -139,11 +144,14 @@ $light-theme: matx.define-theme($m3-base-config);
 
 // Our M3 dark theme.
 $dark-theme: matx.define-theme(
-   map.set($m3-base-config, color, theme-type, dark)
+  map.set($m3-base-config, color, theme-type, dark)
 );
 
 // Emit default theme styles.
 html {
+  background: #fff8f7;
+  color: #221919;
+
   @include mat.autocomplete-theme($light-theme);
   @include mat.badge-theme($light-theme);
   @include mat.bottom-sheet-theme($light-theme);
@@ -187,8 +195,8 @@ html {
 
 // Emit dark theme styles.
 .dark {
-  background: black;
-  color: white;
+  background: #1a1111;
+  color: #ece0df;
 
   @include mat.autocomplete-color($dark-theme);
   @include mat.badge-color($dark-theme);
@@ -277,3 +285,5 @@ html {
     @include mat.tree-density($scale-theme);
   }
 }
+
+@import "assets/theme/buttons";
