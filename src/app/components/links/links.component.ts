@@ -48,7 +48,7 @@ export class LinksComponent {
       {
         svg: 'mydownload',
         label: 'My Resume',
-        href: 'assets/resume.pdf',
+        href: 'assets/files/resume.pdf',
       },
       {
         svg: 'linkedin',
