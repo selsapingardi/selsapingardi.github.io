@@ -9,10 +9,12 @@
         <p class="font-medium my-0 max-w-30rem">
           {{ description }}
         </p>
-        <nav>
+        <nav class="max-w-30rem">
           <ul class="mt-5 pl-0 list-none">
             @for(link of navLinks; track link) {
-            <li class="uppercase py-2">{{ link }}</li>
+            <li class="uppercase py-2 flex align-items-center">
+              {{ link }}
+            </li>
             }
           </ul>
         </nav>
@@ -34,7 +36,7 @@
         </div>
       </div>
     </header>
-    <main class="py-6 lg:w-6 lg:px-8">
+    <main class="py-6 lg:w-6 lg:px-6">
       <app-about-me></app-about-me>
 
       <app-experiences></app-experiences>

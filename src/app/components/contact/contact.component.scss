@@ -3,9 +3,27 @@ mat-icon {
   height: 18px;
   width: 18px;
 }
-p {
-  color: var(--md-sys-color-on-primary-container);
-  span {
-    color: var(--md-sys-color-secondary);
+a {
+  cursor: pointer;
+}
+.hover-underline {
+  display: inline-block;
+  position: relative;
+  color: var(--md-sys-color-primary);
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -1px;
+    left: 0;
+    background-color: var(--md-sys-color-primary);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+  }
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 }

@@ -1,0 +1,28 @@
+li {
+  cursor: pointer;
+  transition: 0.5s;
+  color: var(--md-sys-color-outline);
+  &.active {
+    color: var(--md-sys-color-on-surface);
+    font-weight: 600;
+  }
+  &:before {
+    position: absolute;
+    font-family: "Material Icons Round";
+    font-weight: 600;
+    content: "\f1df";
+    left: -20px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  &:hover {
+    color: var(--md-sys-color-on-surface);
+    font-weight: 600;
+    padding-left: 20px;
+    &:before {
+      color: var(--md-sys-color-on-surface);
+      opacity: 1;
+      left: 0;
+    }
+  }
+}

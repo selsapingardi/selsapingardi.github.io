@@ -39,7 +39,7 @@ import { LinksComponent } from './components/links/links.component';
 })
 export class AppComponent {
   title = 'portfolio';
-  darkTheme = signal(false);
+  darkTheme = signal(localStorage.getItem('theme') === 'dark');
 
   name = 'Selsa Pingardi';
   job = 'Frontend Developer';
@@ -50,6 +50,7 @@ export class AppComponent {
   constructor(iconRegistry: MatIconRegistry) {
     iconRegistry.setDefaultFontSetClass('material-icons-round');
     effect(() => {
+      localStorage.setItem('theme', this.darkTheme() ? 'dark' : 'light');
       document.body.classList.toggle('dark', this.darkTheme());
     });
   }
