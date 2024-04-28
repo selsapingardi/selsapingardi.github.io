@@ -229,6 +229,7 @@ $my-tertiary-palette: _apply-patches(
   --md-sys-color-surface-container: rgb(252 234 233);
   --md-sys-color-surface-container-high: rgb(246 228 228);
   --md-sys-color-surface-container-highest: rgb(240 222 222);
+  --md-sys-color-tertiary-container-low: rgb(255 238 220);
 
   .dark {
     --md-sys-color-primary: rgb(255 179 181);
@@ -280,5 +281,6 @@ $my-tertiary-palette: _apply-patches(
     --md-sys-color-surface-container: rgb(39 29 29);
     --md-sys-color-surface-container-high: rgb(50 40 40);
     --md-sys-color-surface-container-highest: rgb(61 50 50);
+    --md-sys-color-tertiary-container-low: rgb(41 24 0);
   }
 }

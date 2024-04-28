@@ -4,24 +4,27 @@
     <div class="flex gap-2 align-items-center">
       <mat-icon color="primary">call</mat-icon>
       <a
-        class="my-0 no-underline hover-underline"
+        class="my-0 no-underline hover-underline cursor-pointer"
         href="https://wa.link/zzf5h6"
       >
         +62 818851010 <span class="text-outline">(Whatsapp)</span>
       </a>
-      <a (click)="openSnackBar('+62818851010')">
+      <a class="cursor-pointer" (click)="openSnackBar('+62818851010')">
         <mat-icon color="accent">content_copy</mat-icon>
       </a>
     </div>
     <div class="flex gap-2 align-items-center">
       <mat-icon color="primary">mail</mat-icon>
       <a
-        class="my-0 no-underline hover-underline"
+        class="my-0 no-underline hover-underline cursor-pointer"
         href="mailto:selsapingardi@outlook.com"
       >
         selsapingardi&#64;outlook.com
       </a>
-      <a (click)="openSnackBar('selsapingardi@outlook.com')">
+      <a
+        class="cursor-pointer"
+        (click)="openSnackBar('selsapingardi@outlook.com')"
+      >
         <mat-icon color="accent">content_copy</mat-icon>
       </a>
     </div>

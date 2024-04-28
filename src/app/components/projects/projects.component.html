@@ -1,1 +1,31 @@
-<p>projects works!</p>
+<div class="mt-3 flex flex-column gap-4">
+  @for (project of projects; track $index) {
+  <a [href]="project.link" class="no-underline">
+    <mat-card class="filled tertiary flex flex-row p-2">
+      <div class="col max-w-8rem flex">
+        <img
+          src="assets/images/project-{{ $index }}.png"
+          alt=""
+          class="w-full"
+          style="object-fit: cover"
+        />
+      </div>
+      <div class="col flex flex-column gap-3">
+        <div>
+          <p class="my-0 text-sm text-tertiary">
+            {{ project.year }} | {{ project.platform }}
+          </p>
+          <p class="mt-1 mb-0 flex align-items-center">
+            <span class="text-base text-on-tertiary-container"
+              >{{ project.title }}
+              <mat-icon class="ml-1 text-base w-1rem h-1rem" color="accent"
+                >arrow_outward</mat-icon
+              >
+            </span>
+          </p>
+        </div>
+      </div>
+    </mat-card>
+  </a>
+  }
+</div>
