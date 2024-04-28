@@ -4,13 +4,13 @@
 <div class="mt-5 grid grid-nogutter">
   @for (group of bulletPoints; track $index) {
   <div class="col-12 lg:col-6">
-    <p class="mt-0 font-medium underline-offset text-on-primary-container">
+    <p class="mt-0 mb-2 font-medium underline-offset text-on-primary-container">
       {{ group.name }}
     </p>
     <ul class="grid grid-nogutter pl-0 list-none">
       @for (bullet of group.bullets; track $index) {
-      <li class="col-5 mb-2">
-        <p class="my-0 flex align-items-center">
+      <li class="col-5 mb-1">
+        <p class="my-0 flex align-items-center text-sm">
           <mat-icon class="mr-2" color="primary">arrow_right</mat-icon
           >{{ bullet }}
         </p>
