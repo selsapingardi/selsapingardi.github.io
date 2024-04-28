@@ -1,9 +1,9 @@
 <div>
-  <p class="font-medium underline text-on-primary-container">Links</p>
+  <p class="font-medium underline-offset text-on-primary-container">Links</p>
   <div class="flex flex-column align-items-start gap-2">
     @for (link of links; track $index) {
     <a mat-stroked-button [href]="link.href" target="_blank">
-      <mat-icon class="mr-2" color="primary" [svgIcon]="link.svg"></mat-icon>
+      <mat-icon class="mr-2" color="primary" [svgIcon]="link.name"></mat-icon>
       {{ link.label }}
     </a>
     }

@@ -10,3 +10,11 @@
 .text-outline {
   color: var(--md-sys-color-outline);
 }
+.text-on-surface-variant {
+  color: var(--md-sys-color-on-surface-variant);
+}
+.underline-offset {
+  text-decoration: underline;
+  text-decoration-thickness: 0.7px;
+  text-underline-offset: 2px;
+}

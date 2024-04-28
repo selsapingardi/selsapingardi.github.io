@@ -1,0 +1,8 @@
+.mat-mdc-card {
+  &.filled {
+    &.primary {
+      background-color: var(--md-sys-color-surface-container-low);
+      box-shadow: none;
+    }
+  }
+}

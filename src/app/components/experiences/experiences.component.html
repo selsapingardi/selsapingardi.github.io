@@ -1,1 +1,69 @@
-<p>experiences works!</p>
+<div class="mt-5 flex flex-column gap-4">
+  @for (experience of experiences; track $index) {
+  <mat-card class="filled primary flex flex-row p-2">
+    <div class="col max-w-6rem flex">
+      <span class="mt-1 font-medium text-sm text-secondary">{{
+        experience.date
+      }}</span>
+    </div>
+    <div class="col flex flex-column gap-3">
+      <div>
+        <p class="my-0 font-medium text-on-primary-container">
+          {{ experience.title }}&#160;&#160;·&#160;&#160;{{
+            experience.employment
+          }}
+        </p>
+        <p class="mt-1 mb-0 text-sm text-outline">{{ experience.company }}</p>
+      </div>
+      <p class="my-0 text-sm text-on-surface-variant">
+        {{ experience.description }}
+      </p>
+      <div class="flex flex-row flex-wrap gap-2">
+        @for (link of experience.links; track $index) {
+        <a
+          class="text-sm text-on-primary-container flex align-items-center no-underline"
+          [href]="link.link"
+          target="_blank"
+        >
+          <mat-icon
+            class="text-base mr-1"
+            style="rotate: 135deg"
+            color="primary"
+            >link</mat-icon
+          >
+          <span class="underline-offset">{{ link.name }}</span>
+        </a>
+        }
+      </div>
+      <div class="flex flex-column" style="gap: 0.75rem">
+        @if (experience.technologies) {
+        <div class="flex flex-row flex-wrap gap-2">
+          @for (technology of experience.technologies; track $index) {
+          <button
+            mat-flat-button
+            class="tertiary-tonal technologies"
+            disabled="true"
+          >
+            <mat-icon [svgIcon]="technology | lowercase"></mat-icon>
+            <span class="font-medium">{{ technology }}</span>
+          </button>
+          }
+        </div>
+        } @if (experience.languages) {
+        <div class="flex flex-row flex-wrap gap-2">
+          @for (language of experience.languages; track $index) {
+          <button
+            mat-flat-button
+            class="primary-tonal languages"
+            disabled="true"
+          >
+            <span class="font-medium">{{ language }}</span>
+          </button>
+          }
+        </div>
+        }
+      </div>
+    </div>
+  </mat-card>
+  }
+</div>

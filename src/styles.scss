@@ -149,8 +149,8 @@ $dark-theme: matx.define-theme(
 
 // Emit default theme styles.
 html {
-  background: #fff8f7;
-  color: #221919;
+  background-color: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
 
   @include mat.autocomplete-theme($light-theme);
   @include mat.badge-theme($light-theme);
@@ -195,8 +195,8 @@ html {
 
 // Emit dark theme styles.
 .dark {
-  background: #1a1111;
-  color: #ece0df;
+  background-color: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
 
   @include mat.autocomplete-color($dark-theme);
   @include mat.badge-color($dark-theme);
@@ -287,4 +287,5 @@ html {
 }
 
 @import "assets/theme/buttons";
+@import "assets/theme/cards";
 @import "assets/theme/text";
