@@ -11,9 +11,14 @@
         </p>
         <nav class="max-w-30rem">
           <ul class="mt-5 pl-0 list-none">
-            @for(link of navLinks; track link) {
-            <li class="uppercase py-2 flex align-items-center cursor-pointer">
-              {{ link }}
+            @for(section of sections; track $index) {
+            <li
+              class="uppercase py-2 flex align-items-center cursor-pointer"
+              (click)="scroll(section.id)"
+              spy
+              [spyTargetId]="section.id"
+            >
+              {{ section.title }}
             </li>
             }
           </ul>
@@ -36,14 +41,24 @@
         </div>
       </div>
     </header>
-    <main class="py-6 lg:w-6 lg:px-6 flex flex-column gap-6">
-      <app-about-me></app-about-me>
-
-      <app-experiences></app-experiences>
-
-      <app-projects></app-projects>
-
-      <app-education></app-education>
+    <main class="py-6 lg:w-6 lg:px-6 flex flex-column gap-7">
+      @for (section of sections; track $index) {
+      <ng-container>
+        <div [id]="section.id" spyTarget [spyTargetId]="section.id">
+          <ng-container [ngComponentOutlet]="section.component"></ng-container>
+        </div>
+      </ng-container>
+      }
+      <div class="mt-5">
+        <p class="text-right text-sm text-outline mb-0">
+          Designed in Figma and coded in Visual Studio Code
+          <br />using Angular and Material Components. <br />
+          <span class="text-on-surface">
+            {{ name }} &copy;
+            {{ year }}
+          </span>
+        </p>
+      </div>
     </main>
   </div>
 </div>

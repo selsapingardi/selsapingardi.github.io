@@ -21,6 +21,7 @@
     "@angular/platform-browser": "^17.3.5",
     "@angular/platform-browser-dynamic": "^17.3.5",
     "@angular/router": "^17.3.5",
+    "@thejlifex/ngx-scroll-spy": "^0.0.2",
     "material-components-web": "^14.0.0",
     "primeflex": "^3.3.1",
     "rxjs": "~7.8.0",

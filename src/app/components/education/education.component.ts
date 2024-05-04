@@ -28,6 +28,8 @@ export class EducationComponent {
       gpa: 3.62,
       degree: 'BSc Computer Science (Web Programming) (Hons)',
       university: 'UOW Malaysia KDU Penang University College',
+      description:
+        'Graduated with dual-degree honors from University of Lincoln and UOWM KDU Penang. Studied computer science with an elective in web programming.',
       awards: [
         "2020 January Semester Dean's List Awardee",
         '2018 International Bursary Award Scholarship Recipient',

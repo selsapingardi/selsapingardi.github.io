@@ -4,6 +4,12 @@ li {
   &.active {
     color: var(--md-sys-color-on-surface);
     font-weight: 600;
+    padding-left: 20px;
+    &:before {
+      color: var(--md-sys-color-on-surface);
+      opacity: 1;
+      left: 0;
+    }
   }
   &:before {
     position: absolute;
@@ -15,11 +21,11 @@ li {
     transition: 0.5s;
   }
   &:hover {
-    color: var(--md-sys-color-on-surface);
+    color: var(--md-sys-color-on-surface-variant);
     font-weight: 600;
     padding-left: 20px;
     &:before {
-      color: var(--md-sys-color-on-surface);
+      color: var(--md-sys-color-on-surface-variant);
       opacity: 1;
       left: 0;
     }

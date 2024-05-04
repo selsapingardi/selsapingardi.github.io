@@ -13,6 +13,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { EducationComponent } from './components/education/education.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { LinksComponent } from './components/links/links.component';
+import { SpyDirective, SpyTargetDirective } from '@thejlifex/ngx-scroll-spy';
+import { NgComponentOutlet } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -33,6 +35,9 @@ import { LinksComponent } from './components/links/links.component';
     EducationComponent,
     ContactComponent,
     LinksComponent,
+    SpyDirective,
+    SpyTargetDirective,
+    NgComponentOutlet,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -40,12 +45,23 @@ import { LinksComponent } from './components/links/links.component';
 export class AppComponent {
   title = 'portfolio';
   darkTheme = signal(localStorage.getItem('theme') === 'dark');
+  currentSection = signal('about-me');
+  year = new Date().getFullYear();
 
   name = 'Selsa Pingardi';
   job = 'Frontend Developer';
   description =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
-  navLinks = ['about me', 'experiences', 'projects', 'education'];
+  sections = [
+    { title: 'about me', id: 'about-me', component: AboutMeComponent },
+    {
+      title: 'experiences',
+      id: 'experiences',
+      component: ExperiencesComponent,
+    },
+    { title: 'projects', id: 'projects', component: ProjectsComponent },
+    { title: 'education', id: 'education', component: EducationComponent },
+  ];
 
   constructor(iconRegistry: MatIconRegistry) {
     iconRegistry.setDefaultFontSetClass('material-icons-round');
@@ -53,5 +69,9 @@ export class AppComponent {
       localStorage.setItem('theme', this.darkTheme() ? 'dark' : 'light');
       document.body.classList.toggle('dark', this.darkTheme());
     });
+  }
+
+  scroll(el: string) {
+    document.getElementById(el)?.scrollIntoView({ behavior: 'smooth' });
   }
 }

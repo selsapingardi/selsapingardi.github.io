@@ -1,13 +1,13 @@
 <div class="mt-3 flex flex-column gap-4">
   @for (project of projects; track $index) {
-  <a [href]="project.link" class="no-underline">
+  <a [href]="project.link" class="no-underline" target="_blank">
     <mat-card class="filled tertiary flex flex-row p-2">
       <div class="col max-w-8rem flex">
         <img
           src="assets/images/project-{{ $index }}.png"
           alt=""
           class="w-full"
-          style="object-fit: cover"
+          style="object-fit: contain"
         />
       </div>
       <div class="col flex flex-column justify-content-center">
@@ -22,6 +22,7 @@
             >
           </span>
         </p>
+        <p class="mt-1 mb-0 text-sm text-tertiary">{{ project.subtitle }}</p>
       </div>
     </mat-card>
   </a>

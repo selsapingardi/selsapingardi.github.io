@@ -16,12 +16,19 @@
         </p>
         <p class="mt-1 mb-0 text-sm text-outline">{{ degree.university }}</p>
       </div>
-      <div class="flex flex-column gap-1">
-        @for (award of degree.awards; track $index) {
-        <p class="my-0 font-italic text-sm text-on-surface-variant">
-          {{ award }}
+      <div>
+        <p class="my-0 font-medium text-sm text-on-primary-container">
+          {{ degree.description }}
         </p>
-        }
+      </div>
+      <div class="flex flex-column gap-1">
+        <ul class="my-0 pl-3">
+          @for (award of degree.awards; track $index) {
+          <li class="my-0 font-italic text-sm text-on-surface-variant">
+            {{ award }}
+          </li>
+          }
+        </ul>
       </div>
       <div class="flex flex-row flex-wrap gap-2">
         @for (link of degree.links; track $index) {
