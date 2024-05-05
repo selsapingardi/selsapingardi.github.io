@@ -15,6 +15,9 @@ import { ContactComponent } from './components/contact/contact.component';
 import { LinksComponent } from './components/links/links.component';
 import { SpyDirective, SpyTargetDirective } from '@thejlifex/ngx-scroll-spy';
 import { NgComponentOutlet } from '@angular/common';
+import { DomSanitizer } from '@angular/platform-browser';
+import svgIcons from '../assets/json/svg-icons.json';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -63,12 +66,23 @@ export class AppComponent {
     { title: 'education', id: 'education', component: EducationComponent },
   ];
 
-  constructor(iconRegistry: MatIconRegistry) {
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.setDefaultFontSetClass('material-icons-round');
+    svgIcons.forEach((icon) => {
+      iconRegistry.addSvgIconLiteral(
+        icon.name,
+        sanitizer.bypassSecurityTrustHtml(icon.svg)
+      );
+    });
     effect(() => {
       localStorage.setItem('theme', this.darkTheme() ? 'dark' : 'light');
       document.body.classList.toggle('dark', this.darkTheme());
     });
+  }
+
+  ngOnInit() {
+    AOS.init({ disable: 'mobile' });
+    AOS.refresh();
   }
 
   scroll(el: string) {

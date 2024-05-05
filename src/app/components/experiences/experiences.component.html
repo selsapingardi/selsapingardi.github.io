@@ -1,6 +1,10 @@
 <div class="flex flex-column gap-4">
   @for (experience of experiences; track $index) {
-  <mat-card class="filled primary flex flex-row p-2">
+  <mat-card
+    class="filled primary flex flex-row p-2"
+    data-aos="fade-up"
+    data-aos-duration="2000"
+  >
     <div class="col max-w-6rem flex">
       <span class="mt-1 font-medium text-sm text-secondary">{{
         experience.date

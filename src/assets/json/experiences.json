@@ -1,0 +1,58 @@
+[
+  {
+    "date": "FEB 2022 - PRESENT",
+    "title": "Programmer",
+    "employment": "Full-Time",
+    "company": "PT. Makmur Supra Nusantara",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Sodales ut etiam sit amet nisl purus in mollis nunc. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales.",
+    "links": [
+      {
+        "name": "Rambutan Website",
+        "link": "https://www.rbt.tbindosatu.com"
+      },
+      {
+        "name": "Rambutan App",
+        "link": "https://play.google.com/store/apps/details?id=com.intidata.rambutan"
+      },
+      {
+        "name": "PayPort",
+        "link": "https://payport.makmursupranusantara.com"
+      },
+      {
+        "name": "MSTR",
+        "link": "https://mstr.id"
+      }
+    ],
+    "technologies": ["Angular", "Flutter", "Laravel", "Figma"],
+    "languages": ["HTML & SCSS", "TypeScript", "Dart", "PHP"]
+  },
+  {
+    "date": "SEP 2021 - FEB 2022",
+    "title": "Junior Programmer",
+    "employment": "Part-Time",
+    "company": "Guggemo",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Sodales ut etiam sit amet nisl purus in mollis nunc. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales.",
+    "links": [
+      {
+        "name": "Guggemo",
+        "link": "https://www.guggemo.com"
+      }
+    ],
+    "technologies": ["Angular"],
+    "languages": ["HTML & SCSS", "TypeScript"]
+  },
+  {
+    "date": "MAR 2021 - AUG 2021",
+    "title": "Web Developer Intern",
+    "employment": "Internship",
+    "company": "Penang Science Cluster",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Sodales ut etiam sit amet nisl purus in mollis nunc. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales.",
+    "links": [
+      {
+        "name": "Girls in Engineering & Tech",
+        "link": "https://www.girl-engineer-tech.me"
+      }
+    ],
+    "languages": ["HTML & SCSS", "JavaScript", "Canva"]
+  }
+]
