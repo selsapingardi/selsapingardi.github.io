@@ -6,7 +6,7 @@
       <div class="flex flex-column gap-1">
         <h1 class="text-7xl my-0">{{ name }}</h1>
         <p class="text-2xl font-medium mt-0 mb-2">{{ job }}</p>
-        <p class="font-medium my-0 max-w-30rem">
+        <p class="font-medium text-outline my-0 max-w-30rem">
           {{ description }}
         </p>
         <nav class="max-w-30rem">
@@ -25,16 +25,19 @@
         </nav>
       </div>
       <div class="flex gap-6">
-        <div class="w-4" style="background-color: #8f4a4e"></div>
+        <div
+          class="w-4"
+          style="background-color: var(--md-sys-color-outline-variant)"
+        ></div>
         <div class="flex flex-column gap-3">
           <app-contact></app-contact>
           <app-links></app-links>
           <button
             mat-icon-button
-            class="primary-tonal"
+            class="primary-tonal icon-button-sm"
             (click)="darkTheme.set(!darkTheme())"
           >
-            <mat-icon class>{{
+            <mat-icon class="text-base">{{
               darkTheme() ? "light_mode" : "dark_mode"
             }}</mat-icon>
           </button>
@@ -49,9 +52,33 @@
         </div>
       </ng-container>
       }
-      <div class="mt-5">
-        <p class="text-right text-sm text-outline mb-0">
-          Designed in Figma and coded in Visual Studio Code
+      <div class="mt-5 flex flex-column align-items-end gap-3">
+        <p
+          class="text-right text-sm text-outline-variant max-w-30rem my-0"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
+          Thank you for taking the time to view my web portfolio!<br />I'm
+          always looking for new opportunities to collaborate, learn, and grow.
+        </p>
+        <p
+          class="text-right text-sm text-outline-variant max-w-30rem my-0"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          data-aos-delay="100"
+        >
+          If you have a project in mind that aligns with my skills, feel free to
+          reach out to me via Whatsapp, email or connect with me on LinkedIn to
+          discuss how I can help bring your vision to life!
+        </p>
+        <div
+          class="w-20rem h-8rem"
+          style="background-color: var(--md-sys-color-outline-variant)"
+        ></div>
+      </div>
+      <div class="mt-5 flex justify-content-end">
+        <p class="text-right text-sm text-outline mb-0 max-w-30rem">
+          Designed in Figma and developed in Visual Studio Code
           <br />using Angular and Material Components. <br />
           <span class="text-on-surface">
             {{ name }} &copy;

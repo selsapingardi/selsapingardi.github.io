@@ -6,7 +6,7 @@ mat-icon {
 .hover-underline {
   display: inline-block;
   position: relative;
-  color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary-container);
   &::after {
     content: "";
     position: absolute;

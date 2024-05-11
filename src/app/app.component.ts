@@ -54,7 +54,7 @@ export class AppComponent {
   name = 'Selsa Pingardi';
   job = 'Frontend Developer';
   description =
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+    'I design and develop responsive websites, web applications, and mobile applications.';
   sections = [
     { title: 'about me', id: 'about-me', component: AboutMeComponent },
     {
