@@ -4,7 +4,7 @@
     "title": "Programmer",
     "employment": "Full-Time",
     "company": "PT. Makmur Supra Nusantara",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Sodales ut etiam sit amet nisl purus in mollis nunc. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales.",
+    "description": "Built and maintained a web application for construction facilities to track their sales and stock called Rambuta using Angular (web) and Flutter (mobile). Created an e-commerce website where members can exchange their points for products and vouchers named MSTR with the Laravel framework. Developed a payment portal for online transactions that is responsive for both web and mobile with Flutter. Designed several on-going mobile applications using Figma.",
     "links": [
       {
         "name": "Rambutan Website",
@@ -31,7 +31,7 @@
     "title": "Junior Programmer",
     "employment": "Part-Time",
     "company": "Guggemo",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Sodales ut etiam sit amet nisl purus in mollis nunc. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales.",
+    "description": "Helped develop the marketplace website for Guggemo by converting the planned design on Figma into a functional website with the Angular framework. Used Jira to track tasks in sprints and Github to collaborate remotely.",
     "links": [
       {
         "name": "Guggemo",
@@ -46,13 +46,13 @@
     "title": "Web Developer Intern",
     "employment": "Internship",
     "company": "Penang Science Cluster",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Sodales ut etiam sit amet nisl purus in mollis nunc. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales.",
+    "description": "Developed a website to promote a yearly program called Girls in Engineering & Tech. Prepared presentation slides in Canva and taught an online web development coding class for primary students. Managed and maintained Penang Science Cluster's official website with WordPress.",
     "links": [
       {
         "name": "Girls in Engineering & Tech",
         "link": "https://www.girl-engineer-tech.me"
       }
     ],
-    "languages": ["HTML & SCSS", "JavaScript", "Canva"]
+    "languages": ["HTML & CSS", "JavaScript", "Canva"]
   }
 ]

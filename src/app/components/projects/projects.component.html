@@ -7,30 +7,32 @@
     data-aos="fade-up"
     data-aos-duration="2000"
   >
-    <mat-card class="filled tertiary flex flex-row p-2">
-      <div class="col max-w-8rem flex">
-        <img
-          src="assets/images/project-{{ $index }}.png"
-          alt=""
-          class="w-full"
-          style="object-fit: contain"
-        />
-      </div>
-      <div class="col flex flex-column justify-content-center">
-        <p class="my-0 text-sm text-tertiary">
-          {{ project.year }} | {{ project.platform }}
-        </p>
-        <p class="mt-1 mb-0 flex align-items-center">
-          <span class="text-lg text-on-tertiary-container"
-            >{{ project.title }}
-            <mat-icon class="ml-1 text-base w-1rem h-1rem" color="accent"
-              >arrow_outward</mat-icon
-            >
-          </span>
-        </p>
-        <p class="mt-1 mb-0 text-sm text-tertiary">{{ project.subtitle }}</p>
-      </div>
-    </mat-card>
+    <div>
+      <mat-card class="filled tertiary flex flex-row p-2">
+        <div class="col max-w-8rem flex">
+          <img
+            src="assets/images/project-{{ $index }}.png"
+            alt=""
+            class="w-full"
+            style="object-fit: contain"
+          />
+        </div>
+        <div class="col flex flex-column justify-content-center">
+          <p class="my-0 text-sm text-tertiary">
+            {{ project.year }} | {{ project.platform }}
+          </p>
+          <p class="mt-1 mb-0 flex align-items-center">
+            <span class="text-lg text-on-tertiary-container"
+              >{{ project.title }}
+              <mat-icon class="ml-1 text-base w-1rem h-1rem" color="accent"
+                >arrow_outward</mat-icon
+              >
+            </span>
+          </p>
+          <p class="mt-1 mb-0 text-sm text-tertiary">{{ project.subtitle }}</p>
+        </div>
+      </mat-card>
+    </div>
   </a>
   }
 </div>
