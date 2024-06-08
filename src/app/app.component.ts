@@ -46,7 +46,6 @@ import AOS from 'aos';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'portfolio';
   darkTheme = signal(localStorage.getItem('theme') === 'dark');
   currentSection = signal('about-me');
   year = new Date().getFullYear();
