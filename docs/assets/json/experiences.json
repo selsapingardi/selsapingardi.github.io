@@ -1,0 +1,58 @@
+[
+  {
+    "date": "FEB 2022 - PRESENT",
+    "title": "Programmer",
+    "employment": "Full-Time",
+    "company": "PT. Makmur Supra Nusantara",
+    "description": "Built and maintained a web application for construction facilities to track their sales and stock called Rambuta using Angular (web) and Flutter (mobile). Created an e-commerce website where members can exchange their points for products and vouchers named MSTR with the Laravel framework. Developed a payment portal for online transactions that is responsive for both web and mobile with Flutter. Designed several on-going mobile applications using Figma.",
+    "links": [
+      {
+        "name": "Rambutan Website",
+        "link": "https://rbt.tbindosatu.com"
+      },
+      {
+        "name": "Rambutan App",
+        "link": "https://rbt.tbindosatu.com/links"
+      },
+      {
+        "name": "PayPort",
+        "link": "https://payport.makmursupranusantara.com"
+      },
+      {
+        "name": "MSTR",
+        "link": "https://mstr.id"
+      }
+    ],
+    "technologies": ["Angular", "Flutter", "Laravel", "Figma"],
+    "languages": ["HTML & SCSS", "TypeScript", "Dart", "PHP"]
+  },
+  {
+    "date": "SEP 2021 - FEB 2022",
+    "title": "Junior Programmer",
+    "employment": "Part-Time",
+    "company": "Guggemo",
+    "description": "Helped develop the marketplace website for Guggemo by converting the planned design on Figma into a functional website with the Angular framework. Used Jira to track tasks in sprints and Github to collaborate remotely.",
+    "links": [
+      {
+        "name": "Guggemo",
+        "link": "https://www.guggemo.com"
+      }
+    ],
+    "technologies": ["Angular"],
+    "languages": ["HTML & SCSS", "TypeScript"]
+  },
+  {
+    "date": "MAR 2021 - AUG 2021",
+    "title": "Web Developer Intern",
+    "employment": "Internship",
+    "company": "Penang Science Cluster",
+    "description": "Developed a website to promote a yearly program called Girls in Engineering & Tech. Prepared presentation slides in Canva and taught an online web development coding class for primary students. Managed and maintained Penang Science Cluster's official website with WordPress.",
+    "links": [
+      {
+        "name": "Girls in Engineering & Tech",
+        "link": "https://www.girl-engineer-tech.me"
+      }
+    ],
+    "languages": ["HTML & CSS", "JavaScript", "Canva"]
+  }
+]

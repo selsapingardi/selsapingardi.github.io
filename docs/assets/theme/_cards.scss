@@ -1,0 +1,20 @@
+@use "sass:color";
+
+.mat-mdc-card {
+  &.filled {
+    box-shadow: none;
+    &.primary {
+      background-color: var(--md-sys-color-surface-container-low);
+    }
+    &.tertiary {
+      background-color: var(--md-sys-color-tertiary-container-low);
+    }
+  }
+  &.outlined {
+    box-shadow: none;
+    &.primary {
+      background-color: transparent;
+      border: 1.5px solid var(--md-sys-color-outline-variant);
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.text-primary {
+  color: var(--md-sys-color-primary);
+}
+.text-on-primary-container {
+  color: var(--md-sys-color-on-primary-container);
+}
+.text-secondary {
+  color: var(--md-sys-color-secondary);
+}
+.text-tertiary {
+  color: var(--md-sys-color-tertiary);
+}
+.text-on-tertiary-container {
+  color: var(--md-sys-color-on-tertiary-container);
+}
+.text-outline {
+  color: var(--md-sys-color-outline);
+}
+.text-on-surface {
+  color: var(--md-sys-color-on-surface);
+}
+.text-on-surface-variant {
+  color: var(--md-sys-color-on-surface-variant);
+}
+.underline-offset {
+  text-decoration: underline;
+  text-decoration-thickness: 0.7px;
+  text-underline-offset: 2px;
+}

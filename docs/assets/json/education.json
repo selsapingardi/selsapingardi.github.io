@@ -1,0 +1,29 @@
+[
+  {
+    "year": 2022,
+    "gpa": 3.62,
+    "degree": "BSc Computer Science (Web Programming) (Hons)",
+    "university": "UOW Malaysia KDU Penang University College",
+    "description": "Graduated with dual-degree honors from University of Lincoln and UOWM KDU Penang. Studied computer science with an elective in web programming. Developed a cross-platform gamified fitness tracker called Pet Treck using Unity for my final year project.",
+    "awards": [
+      "2020 January Semester Dean's List Awardee",
+      "2018 International Bursary Award Scholarship Recipient"
+    ],
+    "links": [
+      {
+        "name": "Pet Treck",
+        "link": "https://selsapingardi.itch.io/pet-treck"
+      },
+      {
+        "name": "HappyJobs.com",
+        "link": "#"
+      },
+      {
+        "name": "PizzaGang",
+        "link": "#"
+      }
+    ],
+    "technologies": ["Unity", "Angular"],
+    "languages": ["C#", "HTML & SCSS", "TypeScript", "JavaScript"]
+  }
+]
