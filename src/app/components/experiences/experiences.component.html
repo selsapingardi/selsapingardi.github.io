@@ -1,3 +1,6 @@
+<div class="md:hidden z-5 py-4 px-3 bg-surface-sticky-blur w-screen">
+  <h4 class="my-0 uppercase">Experiences</h4>
+</div>
 <div class="flex flex-column gap-4">
   @for (experience of experiences; track $index) {
   <mat-card
@@ -5,13 +8,16 @@
     data-aos="fade-up"
     data-aos-duration="2000"
   >
-    <div class="col max-w-6rem flex">
+    <div class="hidden md:flex col max-w-6rem">
       <span class="mt-1 font-medium text-sm text-secondary">{{
         experience.date
       }}</span>
     </div>
     <div class="col flex flex-column gap-3">
       <div>
+        <p class="md:hidden mt-0 mb-1 font-medium text-xs text-secondary">
+          {{ experience.date }}
+        </p>
         <p class="my-0 font-medium text-on-primary-container">
           {{ experience.title }}&#160;&#160;·&#160;&#160;{{
             experience.employment

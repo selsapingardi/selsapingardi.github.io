@@ -80,7 +80,9 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    AOS.init({ disable: 'mobile' });
+    AOS.init({
+      disable: window.innerWidth < 768,
+    });
     AOS.refresh();
   }
 

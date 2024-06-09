@@ -1,15 +1,17 @@
-<div class="mx-auto min-h-screen max-w-screen px-8">
+<div
+  class="mx-auto min-h-screen max-w-screen px-3 md:px-4 lg:px-8 py-3 md:py-0"
+>
   <div class="min-h-screen lg:flex lg:justify-content-between lg:gap-5">
     <header
       class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-6 lg:flex-column lg:justify-content-between lg:py-6"
     >
       <div class="flex flex-column gap-1">
-        <h1 class="text-7xl my-0">{{ name }}</h1>
-        <p class="text-2xl font-medium mt-0 mb-2">{{ job }}</p>
+        <h1 class="text-5xl md:text-7xl my-0">{{ name }}</h1>
+        <p class="text-xl md:text-2xl font-medium mt-0 mb-2">{{ job }}</p>
         <p class="font-medium text-outline my-0 max-w-30rem">
           {{ description }}
         </p>
-        <nav class="max-w-30rem">
+        <nav class="hidden md:block max-w-30rem">
           <ul class="mt-5 pl-0 list-none">
             @for(section of sections; track $index) {
             <li
